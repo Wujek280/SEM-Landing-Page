@@ -1,6 +1,6 @@
-  <!DOCTYPE HTML>
+  <!DOCTYPE html>
 
-  <html lang="PL">
+  <html lang="pl">
 
     <head>
       
@@ -14,6 +14,8 @@
       <!-- CASCADE STYLE SHEETS -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/landingpage.css"> 
+      <link rel="stylesheet" href="css/buttons.css">
+      <link rel="stylesheet" href="css/popup.css">
       <link rel="stylesheet" href="css/crossbrowser.css">
 
       <!--  FONT  -->
@@ -23,38 +25,84 @@
 
     <body>
 
-      <!--NAV BAR-->
+      <!--NAVBAR-->
       <nav>
+        
+        <div class="nav-logo">
+          <a href="#" class="logo" >Logo</a>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="button-blue">Infolinia</button>
+          <button class="button-blue">Napisz do nas</button>
+        </div>
+
+        <div style="clear:both"></div>
+
       </nav>
 
       <!--HEADER-->
       <header>
-        <h2>lorem ipsum</h2>
-        <h2>ipsum ipsum</h2>
-        <h2>lorem ipsum</h2>
+        <div class="header-text">
+          <h2>lorem ipsum</h2>
+          <h2>ipsum ipsum</h2>
+          <h2>lorem ipsum</h2>
+        </div>
       </header>
 
       <!--PHP-BASED-->
-      <!--USE .offers-offer--even AND .offers-offer--odd CLASS FOR STYLE-->
       <section class="offers-container">
 
         <!--Singe Odd Offer -->
-        <div class="offers-offer offers-offer--odd">
-          <div class="offers-offer">
-            <h3>Lorem</h3>
+        <div class="offers-offer">
+          <div class="offers-offer-content">
+            <h3>lorem ipsum</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.</p>
             <span>LoremIpsum@dolor.la</span>
           </div>
-          <div class="offers-offer">
-            <button class="button-gray">Zobacz więcej</button>
+          <div class="offers-offer-action">
             <button class="button-blue">Złóż zapytanie ofertowe</button>
+            <button class="button-gray">Zobacz więcej</button>
           </div>
+          <div style="clear:both"></div>
         </div>
 
         <!--Singe Even Offer -->
+          <div class="offers-offer">
+          <div class="offers-offer-content">
+            <h3>lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+            <span>LoremIpsum@dolor.la</span>
+          </div>
+          <div class="offers-offer-action">
+            <button class="button-blue">Złóż zapytanie ofertowe</button>
+            <button class="button-gray">Zobacz więcej</button>
+          </div>
+          <div style="clear:both"></div>
+        </div>
+
+        <!--Singe Odd Offer -->
+          <div class="offers-offer">
+          <div class="offers-offer-content">
+            <h3>lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+            <span>LoremIpsum@dolor.la</span>
+          </div>
+          <div class="offers-offer-action">
+            <button class="button-blue">Złóż zapytanie ofertowe</button>
+            <button class="button-gray">Zobacz więcej</button>
+          </div>
+          <div style="clear:both"></div>
+        </div>
 
       </section>
 
@@ -66,7 +114,7 @@
       <!--  SCRIPT  -->
       <script src="js/jquery-3.2.1.min.js"></script>  
       <script src="js/bootstrap.min.js"></script>  
-      <script src="js/script.js"></script>  
+      <script src="js/popup.js"></script>  
         
     </body>
 
