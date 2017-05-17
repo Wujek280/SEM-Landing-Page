@@ -2,8 +2,16 @@
 
 $(function(){
 
+	addEventListeners();
+
+
+
+
 	
-	//Loop for attaching onclick fn to buttons
+})
+
+function addEventListeners(){
+		//Loop for attaching onclick fn to buttons
 	for(var i=0; i<document.getElementsByName('contactButton').length; i++){
 		
 		document.getElementsByName('contactButton')[i].onclick = function(){
@@ -11,9 +19,43 @@ $(function(){
 		}
 	}
 
-	
-})
+
+
+
+}
 
 function popUp(){
+
+	// document.body.className = 'blur';
+
+	var bgDiv = document.createElement('div');
+	bgDiv.className = 'backgroundDiv';
+	document.getElementsByTagName('nav')[0].appendChild(bgDiv);
+
+	var popUpMenuDiv = document.createElement('div');
+	popUpMenuDiv.className = 'popUpMenu row';
+	document.getElementsByClassName('backgroundDiv')[0].appendChild(popUpMenuDiv);
+
+	var callDiv = document.createElement('div');
+	callDiv.className = 'callDiv';
+	callDiv.innerHTML= '
+		<h2>Hello</h2>
+		<p>Lorme ipsum</p>
+	';
+	document.getElementsByClassName('popUpMenu')[0].appendChild(callDiv);
+
+	var replyDiv = document.createElement('div');
+	replyDiv.className = 'replyDiv';
+	document.getElementsByClassName('popUpMenu')[0].appendChild(replyDiv);
+
+	document.getElementsByClassName('backgroundDiv')[0].onclick = function(){
+			closePopUp();
+	}
 	console.log('popup working');
+}
+
+function closePopUp(){
+	// document.body.className = '';
+	document.getElementsByClassName('backgroundDiv')[0].outerHTML = '';
+
 }

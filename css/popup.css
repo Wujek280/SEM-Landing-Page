@@ -1,0 +1,38 @@
+.backgroundDiv {
+	z-index: 200;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: rgba(22,22,22,0.5);
+	transition: 1s;
+	cursor: crosshair;
+}
+
+.popUpMenu {
+	z-index: 210;
+	background-color: white;
+	opacity: 1;
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	top:100px;
+	left: 100px;
+}
+
+.callDiv {
+	border-right: 1px solid #303030;
+	z-index: 220;
+	background-color: #787;
+	opacity: 1;
+	height: 100%;
+}
+
+.replyDiv{
+	z-index: 220;
+	background-color: #778;
+	background-color: white;
+	opacity: 1;
+	height: 100%;
+}
