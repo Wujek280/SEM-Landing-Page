@@ -21,13 +21,15 @@ function addEventListeners(){
 	}
 
 	var zapytanieOfertowe = document.getElementsByName('zapytanieOfertowe');
-	for(var j=0; j<zapytanieOfertowe.length; j++){
+	for(var i=0; i<contactButtons.length; i++){
 		
 		zapytanieOfertowe[i].onclick = function(e){
 			e.preventDefault();
 			popUp(true);
 		}
 	}
+
+
 }
 
 function popUp(showOnlyMessagePopUp = false){

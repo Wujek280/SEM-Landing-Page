@@ -5,7 +5,9 @@ body{
     min-width: 786px;
 }
 
-a, a>h3{
+a,
+a>h3,
+a:hover{
 	text-decoration: none;
 }
 
