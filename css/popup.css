@@ -70,7 +70,8 @@ form{
 	height: 100%;
 }
 
-input {
+input,
+select {
 	width: 50%;
 	height: 28px;
 	margin: 0px auto 10px;
