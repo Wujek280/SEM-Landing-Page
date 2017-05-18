@@ -11,13 +11,22 @@
 }
 
 .popUpMenu {
+	display: block !important;
 	z-index: 210;
 	opacity: 1;
 	width: 786px;
 	height: 786px;
 	margin: auto;
 	transform: translateY(-50%);
-	margin-top:45%;
+    margin-top: 395px;
+}
+
+.show{
+    animation: 0.6s popUpShow;	
+}
+
+.hide{
+    animation: 0.6s popUpHide;
 }
 
 .callDiv {
@@ -101,3 +110,10 @@ button.button-send{
 }
 
 
+@keyframes popUpShow {
+	0%{margin-top:-500px}
+}
+
+@keyframes popUpHide {
+	100%{margin-top:-500px}
+}

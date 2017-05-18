@@ -19,7 +19,8 @@ h3{
 /******************************************************/
 /*NAV*/
 nav {
-	min-width: 100%;
+	min-width: 786px;
+	width: 100%;
 	background-color: white;
 	z-index: 100;
 	position: fixed;
