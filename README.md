@@ -1,2 +1,2 @@
 ## SEM-Landing-Page
-Tutorial
+Intern Project
